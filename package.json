@@ -1,5 +1,5 @@
 {
-  "name": "untitled",
+  "name": "uhimenko_vladislav",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,12 +9,14 @@
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
     "core-util-is": "^1.0.2",
+    "gulp": "^4.0.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "sass": "^1.26.10"
   },
   "scripts": {
     "dev": "webpack-dev-server",
-    "start": "webpack"
+    "startWebpack": "webpack"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,7 +41,14 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12",
     "css-loader": "^4.3.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "jquery": "^3.5.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
@@ -54,7 +63,12 @@
       "@babel/react"
     ],
     "plugins": [
-      ["@babel/plugin-proposal-class-properties", { "loose": true }]
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ]
     ]
   }
 }
